@@ -1,22 +1,19 @@
 # Data Migration Tool
 
-Arcpy based Python script for Migrate the input File Geodatabase (FGDB) into the output File Geodatabase (FGDB).
+ArcPy based Python script to migrate the input File Geodatabase (FGDB) into the output File Geodatabase (FGDB).
 
 ## Installation
 
 Python clone version of Arcgis pro 3
 
-## Usage
-Open with main.py using 
-edit with IDLE (ArcGIS Pro)
+## Steps to RUN the script:
+1. Right click "main.py" and select "Edit with IDLE (ArcGIS Pro)"
 (Or use a popular IDE like VScode or command line, make sure use Python of ArcGIS Pro 3 )
-Go to Run menu and and click run module or just press F5
-
-Enter Input FGDB path and Target FGDB path
+2. Go to Run menu and and click run module or just press F5
+3. Enter Input FGDB path and Target FGDB path
 
 e.g 
-```python
-
+```
 Enter Input FGDB path:
 D:\Worspace_ArcGISPro\projects\Data_Migration_SG\script\InputPolygonGDB.gdb
 
@@ -24,12 +21,12 @@ Enter Target FGDB path:
 D:\Worspace_ArcGISPro\projects\Data_Migration_SG\script\TargetPolygonGDB.gdb
 
 ```
-
-Cheking files: If input and target files exists in the path
-If files are exist then execute the append tool
-Migrate polygons if reference number that starts with SP_ and have 5 digits 
+## Checking files: If input and target files exists in the path
+then execute the append tool
+Migrate polygons if reference number that starts with SP_ and have 5 digits
+If file not found it will show "Filename not found" 
 
 ## Check results 
 Open ArcGIS pro 3 
-On the Map tab, in the Layer group, click Add Data Add Data and click Data Add Data.
-Brows the Target FGDB and select TargetPolygonFC
+On the Map tab, in the Layer group, click "Add Data" and then click "add data to the map".
+Browse the Target FGDB and select TargetPolygonFC
