@@ -25,8 +25,8 @@ print('Enter Target FGDB path:')
 Target_FGDB_path = input()
 print('Target FGDB path, ' + Target_FGDB_path)
 
-#field mapping between input FC and target FC
-#Fixed Mismatch field and rest field will be same
+#Field mapping between input FC and target FC
+#We have fixed mismatched fields and rest fields will remain same
 def fieldmapping(inFeature,outFeature):
     iFields = [field.name for field in arcpy.ListFields(inFeature) if field.name not in ("REFNum", "Water_CATCH")] 
     fieldMappings = arcpy.FieldMappings()
